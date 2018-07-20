@@ -9,8 +9,7 @@ import (
 	"strings"
 	_ "test/routers"
 	"time"
-
-	"github.com/astaxie/beego"
+	//"github.com/astaxie/beego"
 )
 
 //182.254.185.142  8080
@@ -19,7 +18,7 @@ var SerialNum int
 var send_test int = 0
 
 func main() {
-	beego.Run()
+	//beego.Run()
 	service := ":8080"
 	//testbuf()
 	tcpAddr, err := net.ResolveTCPAddr("tcp4", service)
